@@ -1,0 +1,39 @@
+.page-header {
+    background-image: url(//chaitan.like-themes.com/wp-content/uploads/2018/07/inner-bg-cut.jpg) !important;
+}
+
+.page-header::after {
+    background-image: url(//chaitan.like-themes.com/wp-content/uploads/2018/06/inner-overlay.png) !important;
+}
+
+.woocommerce-MyAccount-navigation .header-widget,
+.widget-area .header-widget {
+    background-image: url(//chaitan.like-themes.com/wp-content/uploads/2018/06/theme-icon.png) !important;
+}
+
+#ltx-widgets-footer {
+    background-image: url(//chaitan.like-themes.com/wp-content/uploads/2018/06/footer-2-bg.png) !important;
+}
+
+#ltx-logo-footer {
+    background-image: url(//chaitan.like-themes.com/wp-content/uploads/2018/06/footer-1-bg.png) !important;
+}
+
+.subscribe-block {
+    background-image: url(//chaitan.like-themes.com/wp-content/uploads/2018/07/subscribe-bg.jpg) !important;
+}
+
+#nav-wrapper.navbar-layout-white-transparent nav.navbar .navbar-logo .logo img,
+#nav-wrapper.navbar-layout-white nav.navbar .navbar-logo .logo img,
+#nav-wrapper.navbar-layout-desktop nav.navbar .navbar-logo .logo img {
+    max-height: 75px !important;
+}
+
+:root {
+    --black: #252C30;
+    --gray: #F5F8F2;
+    --white: #ffffff;
+    --main: #88B44E;
+    --font-main: 'Open Sans';
+    --font-headers: 'Playfair Display';
+}
