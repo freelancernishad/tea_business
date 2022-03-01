@@ -360,7 +360,7 @@
 																<article id="post-5099"
 																	class="post-5099 services type-services status-publish has-post-thumbnail hentry services-category-assortment"
 																	data-mh="ltx-services-1313327671">
-																	<a href="{{ url('') }}" class="photo">
+																	<a href="{{ url('shop?category='.$catList->name) }}" class="photo">
 																		<img width="740" height="520"
 																			src="{{ $catList->Images }}"
 																			class="attachment-chaitan-service size-chaitan-service"
@@ -570,7 +570,7 @@
 																		<li id="post-4842"  data-id="{{ $productsList->id }}"
 																			class="swiper-slide filter-item filter-type-0 filter-type-243 filter-type-242 filter-type-246 post-4842 product type-product status-publish has-post-thumbnail product_cat-green-tea product_cat-black-tea product_cat-organic-tea product_tag-organic first instock shipping-taxable purchasable product-type-simple">
 																			<div class="item"> <a
-																					href="http://chaitan.like-themes.com/product/an-xi-mao-xie/">
+																					href="{{ url('/product/'.$productsList->id) }}">
 																					<div class="image">
 																						<img width="340" height="227"
 																							src="{{ $productsList->Images }}"
@@ -586,7 +586,7 @@
 																						class="woocommerce-loop-product__title">
 																						{{ $productsList->product_title }}</h2>
 																				</a>
-																				<a href="http://chaitan.like-themes.com/product/an-xi-mao-xie/"
+																				<a href="{{ url('/product/'.$productsList->id) }}"
 																					class="btn btn-white btn-more">More
 																					info</a>
 																				<div class="post_content entry-content">
@@ -1048,6 +1048,14 @@
 														Recent blog posts</h3>
 													<p class="header-text">Blog</p>
 												</div>
+
+
+
+
+                                                @foreach ($Blogs as $BlogsList)
+
+
+
 												<div class="blog blog-sc row layout-images">
 													<div class="col-lg-4 col-md-6 col-sm-6">
 														<article id="post-3689"
@@ -1092,6 +1100,12 @@
 															</div>
 														</article>
 													</div>
+
+													@endforeach
+
+
+
+
 
 													<div class="col-lg-4 col-md-6 col-sm-6">
 														<article id="post-3690"

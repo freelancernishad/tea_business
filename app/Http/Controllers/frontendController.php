@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -7,6 +6,7 @@ use App\Models\Product_category;
 use App\Models\Product;
 use App\Models\Customer;
 use App\Models\Order;
+use App\Models\Blog;
 use Illuminate\Support\Facades\Hash;
 
 
@@ -17,12 +17,13 @@ class frontendController extends Controller
         $cat = Product_category::orderBy('id','desc')->get();
 
         $products = Product::orderBy('id','desc')->get();
+        $Blogs = Blog::orderBy('id','desc')->get();
 
         // return session()->get('cart');
 
         // die();
 
-        return view('index',compact('cat','products'));
+        return view('index',compact('cat','products','Blogs'));
 
 
     }
