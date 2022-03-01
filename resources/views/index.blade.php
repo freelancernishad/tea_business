@@ -1078,7 +1078,7 @@
 																		accumsan nunc, sit amet tempor lectus facilisis
 																		eu. Cras vel elit felis. Vestibulum convallis
 																		ipsum id a &#8230;</p>
-																</div>
+										 						</div>
 
 																<div class="blog-info">
 																	<ul>
